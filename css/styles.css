@@ -17,8 +17,6 @@ css/custom.css and it will override the style in this file. You have been warned
 
 */
 
-@import url(http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic);
-
 .buy_from_tf{
    width:115px;
    height: 115px;
@@ -36,7 +34,8 @@ body {
   text-align:center;
   min-height:500px;/* for good browsers*/
   min-width:996px;/* for good browsers*/
-font-family: 'Cuprum', sans-serif;  font-size:13px
+  font-family:'Folks-Normal', Arial, Helvetica, sans-serif;
+  font-size:13px
 }
 
 a{
@@ -189,10 +188,10 @@ h4 {
   padding-top:10px;
   float:left}
 
-.socials {
+/*.socials {
   float:right;
   background:url(../images/social_bg_left.png) left top no-repeat;
-  height:27px;
+  height:100px;
   padding:0 5px 0 7px;
   margin-top:41px;
   position:relative
@@ -202,7 +201,7 @@ h4 {
   margin:0;
   padding:0;
   display:block;
-  height:27px;
+  height:100px;
   background:url(../images/social_bg_right.png) right top no-repeat;
   padding:5px 7px 0 0;
 }
@@ -211,13 +210,13 @@ h4 {
   display:block;
   float:left;
   text-indent:-30000px;
-  height:14px;
+  height:100px;
   margin:0 5px}
 
 a.social-fb {
-  background:url(../images/social/facebook.png) 0 0 no-repeat;
-  width:15px;
-  height:14px;}
+  background:url(../images/social/fb.png) 0 0 no-repeat;
+  width:100px;
+  height:100px;}
 
 a.social-flickr {
   background:url(../images/social/flickr.png) 0 0 no-repeat;
@@ -229,14 +228,20 @@ a.social-vimeo {
 
 a.social-twitter {
   background:url(../images/social/twitter.png) 0 0 no-repeat;
-  width:9px;}
+  width:9px;}*/
 
 a.social-fb:hover,
 a.social-flickr:hover,
 a.social-vimeo:hover,
 a.social-twitter:hover{
-  background-position:0 -14px}
-
+  transition: all .2s ease-in;
+  transform: scale(5);}
+a.social-fb,
+a.social-flickr,
+a.social-vimeo,
+a.social-twitter{
+  transition: all .3s ease-in;
+}
 .topmenu {
   font-family:'Folks-Normal', Arial, sans-serif;
   font-weight:normal;
@@ -374,7 +379,7 @@ ul.dropdown .root-item {
 /* slider block */
 .slider-body {
   height:365px;
-  padding-top:88px;
+  padding-top:45px;
   width:100%;
   position:relative 
 }
@@ -434,7 +439,8 @@ ul.dropdown .root-item {
   width:100%;
   top:0;
   left:0;
-  z-index:200;}
+  z-index:200;
+}
 
 .slider-filter-wrapper {
   width:996px;
@@ -464,7 +470,7 @@ ul.dropdown .root-item {
   width:86px;
   height:21px;
   line-height:21px;
-  text-align:left;
+  text-align:center;
 }
 
 .filter-content a {
@@ -524,9 +530,7 @@ ul.dropdown .root-item {
 #content-scroll {
       width: 100%;
       height: 367px;
-      overflow:auto;
-      overflow-y: hidden;
-      -ms-overflow-y: hidden;
+
 }
 
 .newspage #content-scroll {
@@ -542,6 +546,23 @@ ul.dropdown .root-item {
   min-width:1800px;
   width: 3374px;  /*width for 10 scroll items*/
   height: 322px;
+}
+ #content-holder p img:hover{
+  height: 80px;
+  width: 80px;
+  padding-bottom: 12px;
+  opacity: .7;
+  transition: all .2s ease-in;
+  transform: scale(2);
+  background: radial-gradient(grey, transparent, transparent);
+
+}
+ #content-holder p img{
+  transition: all .3s ease-in;
+  /*margin-top: 8px;*/
+  height: 38px;  
+  width: 38px;  
+  
 }
 
 .scroll-content-item { 
@@ -566,12 +587,20 @@ ul.dropdown .root-item {
   height:317px;}
 
 .scroll-item-img {
+  transition: all .3s ease-in;
   padding:9px;
   border-bottom:1px solid #2a2a2a;
   height:227px;
   width:302px;
   background:#050505;
-  margin-bottom:15px;}
+  margin-bottom:0px;}
+
+.scroll-item-img:hover{
+  transition: all .2s ease-in;
+    margin-top: 35px;
+  transform: scale(1.35);
+  /*width: 400px;*/
+}
 
 .scroll-item-name {
   text-align:center}
@@ -580,13 +609,16 @@ ul.dropdown .root-item {
   font-size:22px;
   font-family:'Folks-Normal', Arial, sans-serif;}
 
+
 .scroll-item-name a {
+  transition: all .5s ease-in;}
   color:#e0e7ea}
+
 
 .item-date {
   color:#4b5257;
   font-family: Arial, Helvetica, sans-serif;
-  font-size:9px;
+  font-size:12px;
   font-weight:bold;
   display:block;
   padding:11px 0;
@@ -596,7 +628,7 @@ ul.dropdown .root-item {
 
 /* footer */
 .footer-content {
-  margin-top:100px;
+  margin-top:50px;
   height:49px;
   color:#5b5e5f;}
 
@@ -606,7 +638,7 @@ ul.dropdown .root-item {
   text-align:center;
   float:left;
   height:49px;
-  overflow:hidden;
+  /*overflow:hidden;*/
   line-height:47px}
 
 .footer-box-l, 
@@ -615,11 +647,22 @@ ul.dropdown .root-item {
   height:49px;
   background:url(../images/footer_box_1.gif) no-repeat}
 
+  .footer-box-l img:hover,
+  .footer-box-r img:hover{
+    transition: all .2s ease-in;
+    transform: scale(3);
+  }
+  .footer-box-l img,
+  .footer-box-r img{
+  transition: all .3s ease-in;
+
+}
+
 .footer-box-l img {
-  margin-top:16px}
+  margin-top:4px}
   
 .footer-box-r img {
-  margin-top:8px}
+  margin-top:4px}
 
 .footer-box-c {
   margin:0 3px;

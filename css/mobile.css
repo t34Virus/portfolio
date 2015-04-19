@@ -8,17 +8,17 @@ body {
     z-index: -1
 }
 .container  {
-  margin: 20px;
+  margin: 10px;
   text-align: center;
   padding: 20px;
-
-
+  width: 90%;
 
 }
+
+
 #content-scroll {
   /*display: hidden;*/
   width: 100% !important;
-
 
 
 }
@@ -38,7 +38,7 @@ body {
   /*margin: 10px;*/
   padding-bottom: 10px;
       font-family: 'Ubuntu', sans-serif;
-  width: 100%;
+  width: 90%;
   color: grey;
   float: none;
 
@@ -88,6 +88,21 @@ body {
 }
 .footer {
   padding-top: 25px;
-      font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
+.scroll-item-img {
+  transition: all .3s ease-in;
+  padding:9px;
+  border-bottom:1px solid #2a2a2a;
+  height:227px;
+  width:302px;
+  background:#050505;
+ }
+
+.scroll-item-img:hover{
+  transition: all .2s ease-in;
+    
+  transform: scale(1.1);
+  /*width: 400px;*/
+}

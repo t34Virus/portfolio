@@ -7,11 +7,13 @@ body {
     position: relative;
     z-index: -1
 }
+.logo img{
+margin-right: 45px;}
 .container  {
   margin: 10px;
   text-align: center;
-  padding: 20px;
-  width: 90%;
+  padding: 15px;
+  width: 100%;
 
 }
 
@@ -24,21 +26,22 @@ body {
 }
 
 #content-holder{
-  width: 100% !important;
+  width: 95% !important;
   height: auto;
-  background:url(../images/middle_bgV.jpg) #1d1d1d;
-      position: relative;
+  text-align: center;
+  background:url(../images/middle_bgV.jpg);
+  position: relative;
   z-index; -1;
-
+  margin-left: 5px;
 
 
 }
 
 .scroll-content-item div {
-  /*margin: 10px;*/
+  margin: 10px;
   padding-bottom: 10px;
       font-family: 'Ubuntu', sans-serif;
-  width: 90%;
+  width: 80%;
   color: grey;
   float: none;
 
@@ -94,10 +97,10 @@ body {
 .scroll-item-img {
   transition: all .3s ease-in;
   padding:9px;
-  border-bottom:1px solid #2a2a2a;
-  height:227px;
-  width:302px;
-  background:#050505;
+  /*border-bottom:1px solid #2a2a2a;*/
+  height:50%;
+  width:50%;
+  /*background:#050505;*/
  }
 
 .scroll-item-img:hover{
@@ -105,4 +108,9 @@ body {
     
   transform: scale(1.1);
   /*width: 400px;*/
+}
+
+.scroll-item-name{
+  margin-left: 25px;
+  padding-left: 10px;
 }

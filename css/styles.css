@@ -440,7 +440,8 @@ ul.dropdown .root-item {
 
 .filter-content ul {
   margin:0 auto;
-  width:570px}
+  width:100%;}
+
 
 .filter-content li {
   margin-left:5px;
@@ -491,27 +492,7 @@ ul.dropdown .root-item {
 .filter-content {
   display:none}
 
-/* content slider */
-#content-slider {
-      width:95%;
-      height: 6px;
-      margin: 0;
-      position: relative;
-}
 
-.ui-slider-handle {
-      width: 5%;
-      height: 8px;
-      position: absolute;
-      top: 0;
-      background-color: #fff;
-}
-
-#content-scroll {
-      width: 100%;
-      height: 367px;
-
-}
 
 .newspage #content-scroll {
   height:317px;
@@ -523,7 +504,7 @@ ul.dropdown .root-item {
   height: 317px;}
 
 #content-holder {
-  min-width:1800px;
+  /*min-width:1800px;*/
   width: 3374px;  /*width for 10 scroll items*/
   height: 322px;
 }
@@ -1032,23 +1013,26 @@ small {
   padding-top:6px;
   color:#444}
 
-
-@media (max-width: 40em) {
-  .slider-body {
-    /*display: none;*/
-  }
-  .ui-slider-handle{
-    /*display: none;*/
-  }
-
-  #content-scroll {
-    overflow: none;
-  }
+@media only screen and (min-width: 60.068em) {
+/* content slider */
+#content-slider {
+      width:95%;
+      height: 6px;
+      margin: 0;
+      position: relative;
 }
 
-@media (min-width: 40.063em) and (max-width:60em) {
-  body {
-    display: none;
-  }
+.ui-slider-handle {
+      width: 5%;
+      height: 8px;
+      position: absolute;
+      top: 0;
+      background-color: #fff;
+}
 
+#content-scroll {
+      width: 100%;
+      height: 367px;
+
+}
 }

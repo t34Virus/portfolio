@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+
+    background:url(../images/body_bg.jpg) #1d1d1d;
+    position: relative;
+    z-index: -1
+}
+.container  {
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+
+
+
+}
+#content-scroll {
+  /*display: hidden;*/
+  width: 100% !important;
+
+
+
+}
+
+#content-holder{
+  width: 100% !important;
+  height: auto;
+  background:url(../images/middle_bgV.jpg) #1d1d1d;
+      position: relative;
+  z-index; -1;
+
+
+
+}
+
+.scroll-content-item div {
+  /*margin: 10px;*/
+  padding-bottom: 10px;
+      font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  color: grey;
+  float: none;
+
+
+}
+
+.item-date p{
+  margin-top: 15px;
+}
+
+
+.scroll-item-name p a {
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: all .5s ease-in;
+  color:#e0e7ea;
+ 
+}
+
+
+
+ #content-holder p img:hover{
+  height: 80px;
+  width: 80px;
+  padding-bottom: 12px;
+  opacity: .7;
+  transition: all .2s ease-in;
+  transform: scale(2);
+  background: radial-gradient(grey, transparent, transparent);
+
+}
+ #content-holder p img{
+  transition: all .3s ease-in;
+  /*margin-top: 8px;*/
+  height: 38px;  
+  width: 38px;  
+  
+}
+.footer-box-c a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: grey;
+}
+.footer-box-c a span {
+
+  display: none;
+}
+.footer {
+  padding-top: 25px;
+      font-family: 'Ubuntu', sans-serif;
+}
+

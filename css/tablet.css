@@ -1,0 +1,5 @@
+@media (min-width: 40.063em) and (max-width:60em) {
+  body {
+    display: none;
+  }
+}

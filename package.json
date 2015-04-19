@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +15,7 @@
   "dependencies": {
     "better-console": "^0.2.4",
     "del": "^1.1.1",
+    "enquire": "0.0.2",
     "extend": "^2.0.0",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-chmod": "^1.2.0",
@@ -40,5 +40,13 @@
     "gulp-watch": "^4.2.2",
     "require-dot-file": "^0.4.0",
     "semantic-ui": "^1.11.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/treindle/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/treindle/portfolio/issues"
+  },
+  "homepage": "https://github.com/treindle/portfolio"
 }

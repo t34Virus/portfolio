@@ -1,8 +1,20 @@
+
     $(document).ready(function(){
+// var mq = window.matchMedia('@media (min-width: 40.068em)');
+
+//     if (mq.matches) {
+
+  /* the viewport is at least 400 pixels wide */
+
+
+      // enquire.register("screen and (min-width: 40.068em)", function() {
+     
       var scrollCount = $('.scroll-content-item').length;
       var scrollItemMargin = 15; // margin between Items (in px)
       var scrollItemWidth = 322; // item width
       var scrollWidth = (scrollItemWidth + scrollItemMargin)*scrollCount; 
+
+
       $("#content-holder").css('width', scrollWidth);                  
       
       $("#content-scroll").css({"overflow":"hidden"});
@@ -28,6 +40,8 @@
       });
     });
 
+   // enquire.register("screen and (min-width: 40.068em", function() {
+
     function handleSliderChange(e, ui)
     {
       var maxScroll = $("#content-scroll").attr("scrollWidth") - $("#content-scroll").width();
@@ -39,3 +53,6 @@
       var maxScroll = $("#content-scroll").attr("scrollWidth") - $("#content-scroll").width();
       $("#content-scroll").attr({scrollLeft: ui.value * (maxScroll / 1000)});
     }
+
+
+  

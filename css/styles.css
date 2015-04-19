@@ -16,6 +16,7 @@ the custom.css file to add your styles. You can copy a style from this file and 
 css/custom.css and it will override the style in this file. You have been warned! :)
 
 */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
 
 .buy_from_tf{
    width:115px;
@@ -34,7 +35,7 @@ body {
   text-align:center;
   min-height:500px;/* for good browsers*/
   min-width:996px;/* for good browsers*/
-  font-family:'Folks-Normal', Arial, Helvetica, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size:13px
 }
 
@@ -47,38 +48,17 @@ ul, ol, li, img, form {
   border:none;
   list-style:none}
   
-@font-face {
-  font-family: 'Folks-Bold';
-  src: url('Folks-Bold.eot');
-  src: local('Folks-Bold'), local('Folks Bold'), url('Folks-Bold.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Folks-Heavy';
-  src: url('Folks-Heavy.eot');
-  src: local('Folks-Heavy'), local('Folks Heavy'), url('Folks-Heavy.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Folks-Light';
-  src: url('Folks-Light.eot');
-  src: local('Folks-Light'), local('Folks Light'), url('Folks-Light.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Folks-Normal';
-  src: url('Folks-Normal.eot');
-  src: local('Folks-Normal'), local('Folks Normal'), url('Folks-Normal.ttf') format('truetype');
-}
-
 .title1 {
-  font-family:'Folks-Normal', Arial, sans-serif;}
+  font-family:'Ubuntu', sans-serif;}
 
 .title2 {
-  font-family:'Folks-Bold', Arial, sans-serif;}
+  font-family:'Ubuntu', sans-serif, 500;}
 
 .title3 {
-  font-family:'Folks-Light', Arial, sans-serif;}
+  font-family:'Ubuntu', sans-serif, 300;}
 
 .title4 {
-  font-family:'Folks-Heavy', Arial, sans-serif;}
+  font-family:'Ubuntu', sans-serif, 700;}
 
 /* default styles */
 dd, blockquote {  
@@ -139,7 +119,7 @@ a {
 h1, h2, h3, h4, h5 {
   color:#dbe2e4;
   font-weight:normal;
-  font-family:'Folks-Normal', Arial, sans-serif;}
+  font-family:'Ubuntu', sans-serif;}
 
 h1 {
   font-size:36px;}
@@ -176,7 +156,7 @@ h4 {
 .footer {
   clear:both;
   width:674px;
-  margin:0 auto;
+  margin: auto;
   padding-bottom:8px;
   clear:both
 }
@@ -243,7 +223,7 @@ a.social-twitter{
   transition: all .3s ease-in;
 }
 .topmenu {
-  font-family:'Folks-Normal', Arial, sans-serif;
+  font-family:'Ubuntu', sans-serif;
   font-weight:normal;
   font-size:15px;
   position:absolute;
@@ -302,7 +282,7 @@ ul.dropdown ul {
   left: -35px;
   z-index: 308;
   width: 128px;
-  font:11px Arial,Helvetica,Sans-serif;
+  font:11px 'Ubuntu',Helvetica,Sans-serif;
   font-weight:normal;
   text-align:left
 }
@@ -399,14 +379,14 @@ ul.dropdown .root-item {
   position:relative}
 
 .newspage-title h1 {
-  font-family:'Folks-Normal', Arial, sans-serif;
+  font-family:'Ubuntu', sans-serif;
   font-size:18px;
   text-transform:uppercase;
   color:#bbc1c4;
   line-height:19px;}
 
 .news-name h2 {
-  font-family:'Folks-Normal', Arial, sans-serif;
+  font-family:'Ubuntu', sans-serif;;
   font-size:15px;
   font-weight:normal;
   text-transform:uppercase;}
@@ -422,7 +402,7 @@ ul.dropdown .root-item {
 .news-short h3 {
   font-size:13px;
   color:#c2c7ca;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:'Ubuntu', sans-serif;
   font-weight:bold}
 
 .news-short ul {
@@ -450,7 +430,7 @@ ul.dropdown .root-item {
 
 .filter-content {
   text-align:center;
-  font-family:'Folks-Normal', Arial, sans-serif;
+  font-family:'Ubuntu', sans-serif;
   font-size:12px;
   text-transform:uppercase;
   color:#232323;
@@ -603,26 +583,27 @@ ul.dropdown .root-item {
 }
 
 .scroll-item-name {
-  text-align:center}
+  text-align:center;
+  margin-bottom: 10px; 
+}
 
 .scroll-item-name p {
   font-size:22px;
-  font-family:'Folks-Normal', Arial, sans-serif;}
+  font-family:'Ubuntu', sans-serif;}
 
 
 .scroll-item-name a {
-  transition: all .5s ease-in;}
-  color:#e0e7ea}
+  transition: all .5s ease-in;
+  color:#e0e7ea;
+  
+}
 
-
-.item-date {
+.scroll-item-name .item-date p{
   color:#4b5257;
-  font-family: Arial, Helvetica, sans-serif;
   font-size:12px;
-  font-weight:bold;
   display:block;
   padding:11px 0;
-  text-transform:uppercase}
+  text-transform:uppercase;}
   
 * html .scroll-content-item { display: inline; } /* IE6 float double margin bug */
 
@@ -670,7 +651,9 @@ ul.dropdown .root-item {
   height:49px;
   background:url(../images/footer_box_2.gif) no-repeat;
   text-transform:uppercase;
-  font-size:11px;
+  font-family:'Ubuntu', sans-serif;
+  font-size:20px;
+  font-weight: bold;
   font-weight:normal;}
 
 /* content */
@@ -756,7 +739,7 @@ a.next {
   clear:both;}
 
 .project-text h1 {
-  font-family:'Folks-Normal',Arial,sans-serif;
+  font-family:'Ubuntu', sans-serif;
   font-size:18px;
   text-transform:uppercase;}
   
@@ -798,7 +781,8 @@ a.next {
   height:auto;
   position: absolute;
   font-size:12px;
-  font-family:Arial, Helvetica, sans-serif}
+  font-family:'Ubuntu', sans-serif;
+}
 
 .tipCont a {
   display:block;
@@ -891,7 +875,7 @@ a.link-button3 {
   padding:7px 0}
 
 .submenu {
-  font-family:'Folks-Normal', Arial, sans-serif;
+  font-family:'Ubuntu', sans-serif;
   font-size:18px;
   text-transform:uppercase;
   color:#4b5257;
@@ -918,7 +902,7 @@ a.link-button3 {
   margin:5px 22px 5px 0}
   
 .column h2 {
-  font-family:'Folks-Normal', Arial, sans-serif;
+  font-family:'Ubuntu', sans-serif;
   font-size:15px;
   font-weight:normal;
   text-transform:uppercase;
@@ -941,7 +925,7 @@ a.link-button3 {
   padding-bottom:30px}
   
 .short-title {
-  font-family:'Folks-Normal', Arial, sans-serif;
+  font-family:'Ubuntu', sans-serif;
   font-size:14px;
   font-weight:normal;
   color:#c0c6c9}
@@ -1043,7 +1027,28 @@ small {
 .error {overflow:hidden; border:1px solid red!important; }  
 
 .pp_description {
-  font-family:Arial, sans-serif;
+  font-family:'Ubuntu', sans-serif;
   font-size:15px !important;
   padding-top:6px;
   color:#444}
+
+
+@media (max-width: 40em) {
+  .slider-body {
+    /*display: none;*/
+  }
+  .ui-slider-handle{
+    /*display: none;*/
+  }
+
+  #content-scroll {
+    overflow: none;
+  }
+}
+
+@media (min-width: 40.063em) and (max-width:60em) {
+  body {
+    display: none;
+  }
+
+}

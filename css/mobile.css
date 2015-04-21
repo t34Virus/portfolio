@@ -1,52 +1,40 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 
-    background:url(../images/body_bg.jpg) #1d1d1d;
-    position: relative;
-    z-index: -1
+  background:url(../images/body_bg.jpg) #1d1d1d;
+  position: relative;
+  z-index: -1
 }
 
 
 .container  {
-  margin: 5px;
+  margin: 8px;
   text-align: center;
-  /*padding: 15px;*/
   width: 95%;
-
 }
 
 
 #content-scroll {
-  /*display: hidden;*/
   width: 100% !important;
-
-
 }
 
 #content-holder{
-  width: 100% !important;
+  width: 95% !important;
   height: auto;
-  text-align: center;
   background:url(../images/middle_bgV.jpg);
   position: relative;
   z-index; -1;
-  /*margin-left: 10px;*/
-
-
 }
 
 .scroll-content-item div {
-  /*margin: 10px;*/
-  text-align: center;
   padding-bottom: 10px;
-      font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   width: 90%;
   color: grey;
   float: none;
-
-
+  margin-left: 15px;
 }
 
 .item-date p{
@@ -59,10 +47,7 @@ body {
   margin-bottom: 10px;
   transition: all .5s ease-in;
   color:#e0e7ea;
- 
 }
-
-
 
  #content-holder p img:hover{
   height: 80px;
@@ -74,6 +59,7 @@ body {
   background: radial-gradient(grey, transparent, transparent);
 
 }
+
  #content-holder p img{
   transition: all .3s ease-in;
   /*margin-top: 8px;*/
@@ -82,37 +68,36 @@ body {
   width: 38px;  
   
 }
+
 .footer-box-c a{
   text-transform: uppercase;
   text-decoration: none;
   color: grey;
 }
 .footer-box-c a span {
-
   display: none;
 }
+
 .footer {
   padding-top: 25px;
   font-family: 'Ubuntu', sans-serif;
 }
-
 .scroll-item-img {
   transition: all .3s ease-in;
   padding:9px;
-  /*border-bottom:1px solid #2a2a2a;*/
   height:50%;
   width:50%;
-  /*background:#050505;*/
  }
 
 .scroll-item-img:hover{
   transition: all .2s ease-in;
-    
   transform: scale(1.1);
-  /*width: 400px;*/
 }
 
 .scroll-item-name{
   margin-left: 15px;
-  /*padding-left: 10px;*/
+}
+
+.filter-arrow.arrowup, .filter-arrow{
+  display: none;
 }

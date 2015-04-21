@@ -16,6 +16,7 @@ the custom.css file to add your styles. You can copy a style from this file and 
 css/custom.css and it will override the style in this file. You have been warned! :)
 
 */
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
 
 .buy_from_tf{
@@ -518,6 +519,7 @@ ul.dropdown .root-item {
   background: radial-gradient(grey, transparent, transparent);
 
 }
+
  #content-holder p img{
   transition: all .3s ease-in;
   /*margin-top: 8px;*/
@@ -525,7 +527,6 @@ ul.dropdown .root-item {
   width: 38px;  
   
 }
-
 .scroll-content-item { 
   width: 322px; 
   height: 322px; 
@@ -632,10 +633,10 @@ ul.dropdown .root-item {
   height:49px;
   background:url(../images/footer_box_2.gif) no-repeat;
   text-transform:uppercase;
-  font-family:'Ubuntu', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size:20px;
-  font-weight: bold;
-  font-weight:normal;}
+  /*font-weight: bold;*/
+}
 
 /* content */
 .content {
@@ -1035,4 +1036,5 @@ small {
       height: 367px;
 
 }
-}
+
+

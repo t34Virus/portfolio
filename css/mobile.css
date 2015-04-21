@@ -21,7 +21,7 @@ body {
 }
 
 #content-holder{
-  width: 95% !important;
+  width: 100% !important;
   height: auto;
   background:url(../images/middle_bgV.jpg);
   position: relative;
@@ -95,7 +95,7 @@ body {
 }
 
 .scroll-item-name{
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .filter-arrow.arrowup, .filter-arrow{
